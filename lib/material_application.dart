@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toastification/toastification.dart';
 import '/core/routes/page_route.dart' as router;
 
 class MaterialApplication extends StatefulWidget {
@@ -13,11 +14,13 @@ class MaterialApplication extends StatefulWidget {
 class _MyAppState extends State<MaterialApplication> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: widget.themeData,
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: router.PageRoute.route,
-      initialRoute: router.loginPage,
+    return ToastificationWrapper(
+      child: MaterialApp(
+        theme: widget.themeData,
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute: router.PageRoute.route,
+        initialRoute: router.loginPage,
+      ),
     );
   }
 }

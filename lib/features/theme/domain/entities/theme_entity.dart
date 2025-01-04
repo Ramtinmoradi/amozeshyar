@@ -8,7 +8,7 @@ class ThemeEntity extends Equatable {
     brightness: Brightness.light,
     textTheme: lightTextTheme,
     fontFamily: 'IranSans',
-    primaryColor: const Color(0xff3461FD),
+    primaryColor: const Color(0xff330099),
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -17,7 +17,7 @@ class ThemeEntity extends Equatable {
     brightness: Brightness.dark,
     textTheme: darkTextTheme,
     fontFamily: 'IranSans',
-    primaryColor: const Color(0xff3461FD),
+    primaryColor: const Color(0xff330099),
   );
 
   static const TextTheme lightTextTheme = TextTheme(

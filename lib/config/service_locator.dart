@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:amozeshyar/core/notifications/notification_service.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -9,7 +10,12 @@ final sl = GetIt.instance;
 
 FutureOr<void> dependenciesInjection() async {
   _injectTheme();
+  _injectNotification();
   await _injectDatabase();
+}
+
+void _injectNotification() {
+  sl.registerLazySingleton<ToastNotifier>(() => FlutterToastNotifier());
 }
 
 void _injectTheme() {

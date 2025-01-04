@@ -1,0 +1,102 @@
+{
+    "student_info": {
+        "name": "نام دانشجو",
+        "student_number": "شماره دانشجویی",
+        "faculty": "دانشکده",
+        "major": "رشته",
+        "entry_year": "سال ورود"
+    },
+    "units_info": {
+        "total_units": 18,
+        "fixed_tuition": "47,200,000 ریال",
+        "variable_tuition": "60,733,600 ریال",
+        "total_tuition": "107,933,600 ریال"
+    },
+    "courses": [
+        {
+            "course_name": "طراحی الگوریتم",
+            "course_code": "4628143773",
+            "class_code": "1885",
+            "credits": 3,
+            "instructor": "محمد سیدي",
+            "time": "سه شنبه از 10:30 تا 13:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "ریزپردازنده و زبان اسمبلي",
+            "course_code": "4628130341",
+            "class_code": "1935",
+            "credits": 3,
+            "instructor": "ھومن مریدویسي",
+            "time": "دوشنبه از 07:30 تا 10:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "مباحث ویژه",
+            "course_code": "4628143772",
+            "class_code": "1887",
+            "credits": 3,
+            "instructor": "محمد سیدي",
+            "time": "شنبه از 10:30 تا 13:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "برنامه نویسی",
+            "course_code": "4628130342",
+            "class_code": "1937",
+            "credits": 3,
+            "instructor": "ھومن مریدویسي",
+            "time": "یکشنبه از 07:30 تا 10:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "مباحث ویژه",
+            "course_code": "4628143774",
+            "class_code": "1888",
+            "credits": 3,
+            "instructor": "محمد سیدي",
+            "time": "چهارشنبه از 10:30 تا 13:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "ریزپردازنده و زبان اسمبلي",
+            "course_code": "4628130344",
+            "class_code": "1939",
+            "credits": 3,
+            "instructor": "ھومن مریدویسي",
+            "time": "پنج شنبه از 07:30 تا 10:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "مباحث ویژه",
+            "course_code": "4628143775",
+            "class_code": "1889",
+            "credits": 3,
+            "instructor": "محمد سیدي",
+            "time": "شنبه از 13:30 تا 15:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        },
+        {
+            "course_name": "ریزپردازنده و زبان اسمبلي",
+            "course_code": "4628130345",
+            "class_code": "1935",
+            "credits": 3,
+            "instructor": "ھومن مریدویسي",
+            "time": "شنبه از 17:30 تا 19:30",
+            "location": "فني شماره (1)-135",
+            "tuition": "6,300,000 ریال"
+        }
+    ],
+    "financial_status": {
+        "debt": "304,849,476 ریال",
+        "credit": "304,850,301 ریال",
+        "final_balance": "825 ریال"
+    }
+}

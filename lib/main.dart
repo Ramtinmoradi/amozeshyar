@@ -1,4 +1,5 @@
 import 'package:amozeshyar/core/responsive/sizes.dart';
+import 'package:amozeshyar/core/utils/app_size.dart';
 import 'package:amozeshyar/features/theme/presentation/bloc/theme_bloc.dart';
 import 'package:amozeshyar/material_application.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppSize.initSize(context);
     return LayoutBuilder(
       builder: (context, constraints) {
         return OrientationBuilder(
