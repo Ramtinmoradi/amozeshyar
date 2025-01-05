@@ -43,7 +43,7 @@ class CustomContainer extends StatelessWidget {
     return Padding(
       padding: padding ?? EdgeInsets.symmetric(horizontal: AppSize.sixteen),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           if (hasHeader)
             Padding(

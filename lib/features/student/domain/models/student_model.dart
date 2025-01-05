@@ -24,6 +24,11 @@ class StudentModel {
         "courses": courses == null ? [] : List<dynamic>.from(courses!.map((x) => x.toJson())),
         "financial_status": financialStatus?.toJson(),
       };
+
+  @override
+  String toString() {
+    return 'StudentModel(studentInfo: $studentInfo, unitsInfo: $unitsInfo, courses: $courses, financialStatus: $financialStatus)';
+  }
 }
 
 class Course {
@@ -68,6 +73,11 @@ class Course {
         "location": location,
         "tuition": tuition,
       };
+
+  @override
+  String toString() {
+    return 'Course(courseName: $courseName, courseCode: $courseCode, classCode: $classCode, credits: $credits, instructor: $instructor, time: $time, location: $location, tuition: $tuition)';
+  }
 }
 
 class FinancialStatus {

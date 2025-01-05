@@ -1,10 +1,10 @@
 {
     "student_info": {
-        "name": "نام دانشجو",
-        "student_number": "شماره دانشجویی",
-        "faculty": "دانشکده",
-        "major": "رشته",
-        "entry_year": "سال ورود"
+        "name": "رامتین مرادی",
+        "student_number": "110972125577",
+        "faculty": "دانشکده فنی مهندسی",
+        "major": "فناوری اطلاعات",
+        "entry_year": "1397"
     },
     "units_info": {
         "total_units": 18,

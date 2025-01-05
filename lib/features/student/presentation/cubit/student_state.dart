@@ -20,6 +20,15 @@ class StudentLoadedSuccessfulState extends StudentState {
   List<Object> get props => [students];
 }
 
+class SearchDataSuccessfulState extends StudentState {
+  final List<Course> course;
+
+  const SearchDataSuccessfulState(this.course);
+
+  @override
+  List<Object> get props => [course];
+}
+
 class StudentErrorState extends StudentState {
   final String message;
 

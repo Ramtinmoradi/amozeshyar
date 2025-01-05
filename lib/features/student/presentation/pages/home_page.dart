@@ -1,3 +1,5 @@
+import 'package:amozeshyar/core/extensions/color_extension.dart';
+import 'package:amozeshyar/core/routes/page_route.dart';
 import 'package:amozeshyar/core/utils/app_size.dart';
 import 'package:amozeshyar/core/widgets/custom_container.dart';
 import 'package:amozeshyar/core/widgets/custom_text.dart';
@@ -17,6 +19,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
+        backgroundColor: Theme.of(context).backgroundColor,
         title: CustomText(
           data: 'صفحه اصلی',
           fontWeight: FontWeight.bold,
@@ -38,22 +41,30 @@ class _HomePageState extends State<HomePage> {
               HomeItem(
                 icon: Icons.screen_search_desktop_rounded,
                 title: 'جستجو درس',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, searchUnitPage);
+                },
               ),
               HomeItem(
                 icon: Icons.view_list_rounded,
                 title: 'وضعیت نیمسال',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, semesterStatusPage);
+                },
               ),
               HomeItem(
                 icon: Icons.list_alt_rounded,
                 title: 'کارنامه نیمسال',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, semesterReportPage);
+                },
               ),
               HomeItem(
                 icon: Icons.attach_money_rounded,
                 title: 'وضعیت مالی',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, financialSituationPage);
+                },
               ),
             ],
           ),
