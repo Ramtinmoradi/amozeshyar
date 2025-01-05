@@ -12,7 +12,7 @@ class FlutterToastNotifier implements ToastNotifier {
     toastification.show(
       description: Text(message),
       direction: TextDirection.rtl,
-      autoCloseDuration: Duration(seconds: 2),
+      autoCloseDuration: Duration(seconds: 3),
       showProgressBar: false,
       style: ToastificationStyle.fillColored,
       type: ToastificationType.success,
@@ -24,7 +24,7 @@ class FlutterToastNotifier implements ToastNotifier {
     toastification.show(
       description: Text(message),
       direction: TextDirection.rtl,
-      autoCloseDuration: Duration(seconds: 2),
+      autoCloseDuration: Duration(seconds: 3),
       showProgressBar: false,
       style: ToastificationStyle.fillColored,
       type: ToastificationType.error,

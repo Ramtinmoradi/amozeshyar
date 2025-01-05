@@ -1,6 +1,7 @@
 import 'package:amozeshyar/features/authentication/presentation/pages/login_page.dart';
 import 'package:amozeshyar/features/student/presentation/pages/financial_situation_page.dart';
 import 'package:amozeshyar/features/student/presentation/pages/home_page.dart';
+import 'package:amozeshyar/features/student/presentation/pages/profile_page.dart';
 import 'package:amozeshyar/features/student/presentation/pages/search_unit_page.dart';
 import 'package:amozeshyar/features/student/presentation/pages/semester_report_page.dart';
 import 'package:amozeshyar/features/student/presentation/pages/semester_status_page.dart';
@@ -14,6 +15,7 @@ const String semesterReportPage = '/semesterReportPage';
 const String semesterStatusPage = '/semesterStatusPage';
 const String unitSelectionPage = '/unitSelectionPage';
 const String financialSituationPage = '/financialSituationPage';
+const String profilePage = '/profilePage';
 
 class PageRoute {
   static Route<dynamic> route(RouteSettings setting) {
@@ -52,6 +54,11 @@ class PageRoute {
         return MaterialPageRoute(
           settings: const RouteSettings(name: financialSituationPage),
           builder: (_) => FinancialSituationPage(),
+        );
+      case profilePage:
+        return MaterialPageRoute(
+          settings: const RouteSettings(name: profilePage),
+          builder: (_) => ProfilePage(),
         );
 
       default:

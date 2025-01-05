@@ -25,6 +25,20 @@ class _HomePageState extends State<HomePage> {
           fontWeight: FontWeight.bold,
           fontSize: 16.0,
         ),
+        actions: [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: AppSize.eight),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, profilePage);
+              },
+              child: Icon(
+                Icons.person,
+                color: Theme.of(context).primaryColor,
+              ),
+            ),
+          ),
+        ],
       ),
       body: SafeArea(
         child: Padding(
@@ -36,7 +50,9 @@ class _HomePageState extends State<HomePage> {
               HomeItem(
                 icon: Icons.add_box_rounded,
                 title: 'انتخاب واحد',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, unitSelectionPage);
+                },
               ),
               HomeItem(
                 icon: Icons.screen_search_desktop_rounded,

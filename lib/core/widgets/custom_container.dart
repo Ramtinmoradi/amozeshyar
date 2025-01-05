@@ -59,7 +59,7 @@ class CustomContainer extends StatelessWidget {
             child: Container(
               width: width ?? double.infinity,
               height: height,
-              padding: margin ?? EdgeInsets.all(AppSize.eight),
+              padding: margin ?? EdgeInsets.all(AppSize.sixteen),
               foregroundDecoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
                   Radius.circular(radius ?? 8.0),
