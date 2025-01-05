@@ -106,8 +106,8 @@ class HomeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomContainer(
       onTap: onTap,
-      width: AppSize.setFullSizeWidth * 0.28,
-      height: AppSize.setFullSizeWidth * 0.28,
+      width: AppSize.setFullSizeWidth * 0.44,
+      height: AppSize.setFullSizeWidth * 0.44,
       padding: EdgeInsets.zero,
       child: Center(
         child: Column(
@@ -115,13 +115,13 @@ class HomeItem extends StatelessWidget {
           children: [
             Icon(
               icon,
-              size: 30.0,
+              size: 40.0,
               color: Theme.of(context).primaryColor,
             ),
             SizedBox(height: AppSize.eight),
             CustomText(
               data: title,
-              fontSize: 14.0,
+              fontSize: 16.0,
             ),
           ],
         ),
